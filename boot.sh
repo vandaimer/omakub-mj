@@ -17,7 +17,7 @@ yay -Syyuu --noconfirm
 fresh_instalation() {
   echo "Fresh installation. Cloning Omakub..."
   rm -rf ~/.local/share/omakub
-  git clone https://github.com/akitaonrails/omakub.git ~/.local/share/omakub >/dev/null
+  git clone https://github.com/vandaimer/omakub-mj.git ~/.local/share/omakub >/dev/null
   if [[ $OMAKUB_REF != "master" ]]; then
     cd ~/.local/share/omakub
     git fetch origin "${OMAKUB_REF:-stable}" && git checkout "${OMAKUB_REF:-stable}"
